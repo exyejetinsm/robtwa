@@ -12,8 +12,8 @@ const axios = require('axios')
 const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/myfunc')
-const { state, saveCreds } = await useMultiFileAuthState(`./${sessionName ? sessionName : "session"}`);
-const { version, isLatest } = await fetchLatestBaileysVersion();
+const { state, saveCreds } = useMultiFileAuthState(`./${sessionName ? sessionName : "session"}`);
+const { version, isLatest } = fetchLatestBaileysVersion();
 const moment = require('moment-timezone')
 
 var low
